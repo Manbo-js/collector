@@ -10,12 +10,12 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Manbo-js/manbo-collector.git"
+    "url": "git+https://github.com/Manbo-js/collector.git"
   },
   "bugs": {
-    "url": "https://github.com/Manbo-js/manbo-collector/issues"
+    "url": "https://github.com/Manbo-js/collector/issues"
   },
-  "homepage": "https://github.com/Manbo-js/manbo-collector#readme",
+  "homepage": "https://github.com/Manbo-js/collector#readme",
   "engines": {
     "node": ">=16.16.0"
   },
