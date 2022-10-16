@@ -1,9 +1,9 @@
-<a name="Manbo Collector"></a>
-# Manbo Collector
+<a name="Collector"></a>
+# Collector
 
 > A Collector for `manbo` based bots
 
-* [Manbo Collector](#Manbo Collector)
+* [Manbo-Collector](#Collector)
     * [Features](#Features)
     * [Install](#Install)
       * [NPM](#NPM)
@@ -11,14 +11,14 @@
       * [PNPM](#PNPM)
     * [API](#API)
       * [Message](#Message) 
-        * [Message Collector](#Message Collector)
-        * [Await Messages](#Await Messages)
+        * [MessageCollector](#MessageCollector)
+        * [awaitMessages](#awaitMessages)
       * [Reaction](#Reaction)
-        * [Reaction Collector](#Reaction Collector)
-        * [Await Reactions](#Await Reactions)
+        * [ReactionCollector](#ReactionCollector)
+        * [awaitReactions](#awaitReactions)
       * [Interaction](#Interaction)
-        * [Interaction Collector](#Interaction Collector)
-        * [Await Component Interactions](#Await Component Interactions)
+        * [InteractionCollector](#InteractionCollector)
+        * [awaitComponentInteractions](#awaitComponentInteractions)
       * [Events](#Events)
       * [Contribute](#Contribute)
 
@@ -60,8 +60,8 @@ pnpm add manbo-collector
 <a name="Message"></a>
 ## Message
 
-<a name="Message Collector"></a>
-## Message Collector
+<a name="MessageCollector"></a>
+## MessageCollector
 
 > Create a collector to collect messages in the channel
 
@@ -82,9 +82,9 @@ pnpm add manbo-collector
 - **_options:_** Collector options
 
   |options|type|description|
-        |------|---|---|
-  |**dispose?**|boolean|Whether to dispose data when it's deleted.|
-  |**idle?**|number|How long to stop the collector after inactivity in milliseconds.|
+  |------|---|---|
+  |**dispose?**|boolean|Whether to dispose data when it's deleted|
+  |**idle?**|number|How long to stop the collector after inactivity in milliseconds|
   |**max?**|number|The maximum total amount of data to collect|
   |**time?**|number|How long to run the collector for in milliseconds|
   |**filter?**|function|The filter applied to this collector|
@@ -94,7 +94,7 @@ pnpm add manbo-collector
 - **_stop:_** Stop this collector
 
   |param|default|description|
-      |---|---|---|
+  |---|---|---|
   |**reason?**|`user`|The reason to stop this collector
 
   **Example:**
@@ -107,7 +107,7 @@ pnpm add manbo-collector
     - **ResetTimerOptions**
 
       |param|type|description|
-            |---|---|---|
+      |---|---|---|
       |**idle?**|number|How long to stop the collector after inactivity in milliseconds|
       |**time?**|number|How long to run the collector for in milliseconds|
 
@@ -201,8 +201,8 @@ client.on('messageCreate', async (message) => {
 
 </details>
 
-<a name="Await Messages"></a>
-## Await Messages
+<a name="awaitMessages"></a>
+## awaitMessages
 
 > A method to collect messages in TextChannel
 
@@ -223,8 +223,8 @@ client.on('messageCreate', async (message) => {
 - **_options:_** Collect options
 
   |options|type|description|
-          |------|---|---|
-  |**dispose?**|boolean|Whether to dispose data when it's deleted.|
+  |------|---|---|
+  |**dispose?**|boolean|Whether to dispose data when it's deleted|
   |**idle?**|number|How long to stop this collecting method after inactivity in milliseconds.|
   |**max?**|number|The maximum total amount of data to collect|
   |**time?**|number|How long to run this collecting method for in milliseconds|
@@ -302,19 +302,19 @@ client.on('messageCreate', async (message) => {
 <a name="Reaction"></a>
 ## Reaction
 
-<a name="Reaction Collector"></a>
-## Reaction Collector
+<a name="ReactionCollector"></a>
+## ReactionCollector
 
 > Create a collector to collect message reactions in a message
 
-same as [Message Collector](#Message Collector) but with reactions
+same as [MessageCollector](#MessageCollector) but with reactions
 
-<a name="Await Reactions"></a>
-## Await Reactions
+<a name="awaitReactions"></a>
+## awaitReactions
 
 > A method to collect message reactions in a message
 
-same as [Await Messages](#Await Messages) but with reactions
+same as [awaitMessages](#awaitMessages) but with reactions
 
 too lazy to add same of this again and again and again and again...
 
@@ -322,8 +322,8 @@ too lazy to add same of this again and again and again and again...
 <a name="Interaction"></a>
 ## Interaction
 
-<a name="Interaction Collector"></a>
-## Interaction Collector
+<a name="InteractionCollector"></a>
+## InteractionCollector
 
 > Create a collector to collect interactions in the channel
 
@@ -337,7 +337,7 @@ too lazy to add same of this again and again and again and again...
 - **_options:_** Collector options
 
   |options|type|description|
-          |------|---|---|
+  |------|---|---|
   |**dispose?**|boolean|Whether to dispose data when it's deleted.|
   |**idle?**|number|How long to stop the collector after inactivity in milliseconds.|
   |**max?**|number|The maximum total amount of data to collect|
@@ -355,7 +355,7 @@ too lazy to add same of this again and again and again and again...
 - **_stop:_** Stop this collector
 
   |param|default|description|
-        |---|---|---|
+  |---|---|---|
   |**reason?**|`user`|The reason to stop this collector
 
   **Example:**
@@ -368,7 +368,7 @@ too lazy to add same of this again and again and again and again...
     - **ResetTimerOptions**
 
       |param|type|description|
-                  |---|---|---|
+      |---|---|---|
       |**idle?**|number|How long to stop the collector after inactivity in milliseconds|
       |**time?**|number|How long to run the collector for in milliseconds|
 
@@ -558,8 +558,8 @@ client.on('messageCreate', async (message) => {
 
 </details>
 
-<a name="Await Component Interactions"></a>
-## Await Component Interactions
+<a name="awaitComponentInteractions"></a>
+## awaitComponentInteractions
 
 > A method to collect component interactions
 
@@ -574,7 +574,7 @@ client.on('messageCreate', async (message) => {
 - **_options:_** Collect options
 
   |options|type|description|
-            |------|---|---|
+  |------|---|---|
   |**dispose?**|boolean|Whether to dispose data when it's deleted.|
   |**idle?**|number|How long to stop the collecting method after inactivity in milliseconds.|
   |**time?**|number|How long to run the collecting method for in milliseconds|
@@ -679,4 +679,4 @@ collector.on('end', (collected, reason) => {
 <a name="Contribute"></a>
 ## Contribute
 
-> **PRs are always welcomed! Feel free to submit PRs!!**
+> **PRs are always welcomed! Feel free to submit PRs!**
