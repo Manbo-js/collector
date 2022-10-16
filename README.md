@@ -232,7 +232,7 @@ client.on('messageCreate', async (message) => {
 
 - **_Returns:_**
     
-    `Promise<Manbo.Message[]>` (see more information in [awaitMessages](https://github.com/Manbo-js/collector/commit/fce19260f7a3ce906095cf8ee325a41d3e3dee8a/src/structures/MessageCollector.ts#L79))
+    `Promise<Manbo.Message[]>` (see more information in [awaitMessages](https://github.com/Manbo-js/collector/blob/b455b41f1286f7122087e7b706e76547601e1154/src/structures/MessageCollector.ts#L79))
 
 **Examples:**
 <details> 
@@ -346,7 +346,7 @@ too lazy to add same of this again and again and again and again...
   |**channel?**|[TextChannel](https://github.com/Manbo-js/manbo/blob/ba2f885e4d112f6c98726d6639b7503426639e35/lib/structures/TextChannel.js#L17)|The channel to listen to interactions from|
   |**guild?**|[Guild](https://github.com/Manbo-js/manbo/blob/ba2f885e4d112f6c98726d6639b7503426639e35/lib/structures/Guild.js#L81)|The guild to listen to interactions from|
   |**interaction?**|[AutoCompleteInteraction](https://github.com/Manbo-js/manbo/blob/ba2f885e4d112f6c98726d6639b7503426639e35/lib/structures/AutocompleteInteraction.js#L21) <br>or [CommandInteraction](https://github.com/Manbo-js/manbo/blob/ba2f885e4d112f6c98726d6639b7503426639e35/lib/structures/CommandInteraction.js#L34) <br>or [ComponentInteraction](https://github.com/Manbo-js/manbo/blob/ba2f885e4d112f6c98726d6639b7503426639e35/lib/structures/ComponentInteraction.js#L17)|The interaction response to listen to message component interactions from|
-  |**message?**|[Message](https://github.com/Manbo-js/manbo/blob/ba2f885e4d112f6c98726d6639b7503426639e35/lib/structures/Message.js#53)|The message to listen to interactions from|
+  |**message?**|[Message](https://github.com/Manbo-js/manbo/blob/ba2f885e4d112f6c98726d6639b7503426639e35/lib/structures/Message.js#L53)|The message to listen to interactions from|
   |**componentType?**|[ComponentType](https://discord.com/developers/docs/interactions/message-components#component-object-component-types)|The type of components to listen for|
   |**interactionType?**|[InteractionType](https://discord.com/developers/docs/interactions/receiving-and-responding#interaction-object-interaction-type)|The type of interactions to listen for|
 
@@ -583,7 +583,7 @@ client.on('messageCreate', async (message) => {
 
 - **_Returns:_**
 
-  `Promise<MappedComponentTypes[]>` (see more information in [MappedComponentTypes](https://github.com/Manbo-js/collector/commit/fce19260f7a3ce906095cf8ee325a41d3e3dee8a/src/structures/InteractionCollector.ts#L11))
+  `Promise<MappedComponentTypes[]>` (see more information in [MappedComponentTypes](https://github.com/Manbo-js/collector/blob/b455b41f1286f7122087e7b706e76547601e1154/src/structures/InteractionCollector.ts#L11))
 
 **Examples:**
 <details> 
