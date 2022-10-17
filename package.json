@@ -1,6 +1,6 @@
 {
   "name": "manbo-collector",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Collector for Manbo",
   "keywords": [
     "manbo",
@@ -24,7 +24,7 @@
     "prepare": "tsc"
   },
   "peerDependencies": {
-    "manbo": "^0.0.2"
+    "manbo": ">=0.0.2"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",
